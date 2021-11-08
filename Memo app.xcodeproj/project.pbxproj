@@ -9,21 +9,37 @@
 /* Begin PBXBuildFile section */
 		D5435D0327393C7C0096D2CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5435D0227393C7C0096D2CB /* AppDelegate.swift */; };
 		D5435D0527393C7C0096D2CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5435D0427393C7C0096D2CB /* SceneDelegate.swift */; };
-		D5435D0727393C7C0096D2CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5435D0627393C7C0096D2CB /* ViewController.swift */; };
+		D5435D0727393C7C0096D2CB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5435D0627393C7C0096D2CB /* HomeViewController.swift */; };
 		D5435D0A27393C7C0096D2CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5435D0827393C7C0096D2CB /* Main.storyboard */; };
 		D5435D0C27393C7E0096D2CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5435D0B27393C7E0096D2CB /* Assets.xcassets */; };
 		D5435D0F27393C7E0096D2CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5435D0D27393C7E0096D2CB /* LaunchScreen.storyboard */; };
+		D5435D1827393CC50096D2CB /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = D5435D1727393CC50096D2CB /* Realm */; };
+		D5435D1A27393CC50096D2CB /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D5435D1927393CC50096D2CB /* RealmSwift */; };
+		D5435D1E273940E70096D2CB /* EditMemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5435D1D273940E70096D2CB /* EditMemo.storyboard */; };
+		D5435D202739416C0096D2CB /* EditMemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5435D1F2739416C0096D2CB /* EditMemoViewController.swift */; };
+		D5435D22273943E90096D2CB /* Main2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5435D21273943E90096D2CB /* Main2.storyboard */; };
+		D5435D25273944E70096D2CB /* MemoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5435D23273944E70096D2CB /* MemoTableViewCell.swift */; };
+		D5435D26273944E70096D2CB /* MemoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5435D24273944E70096D2CB /* MemoTableViewCell.xib */; };
+		D5435D29273948D30096D2CB /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5435D28273948D30096D2CB /* RealmModel.swift */; };
+		D5435D2B273948DA0096D2CB /* RealmQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5435D2A273948DA0096D2CB /* RealmQuery.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D5435CFF27393C7C0096D2CB /* Memo app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Memo app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5435D0227393C7C0096D2CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5435D0427393C7C0096D2CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D5435D0627393C7C0096D2CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D5435D0627393C7C0096D2CB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D5435D0927393C7C0096D2CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D5435D0B27393C7E0096D2CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5435D0E27393C7E0096D2CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D5435D1027393C7E0096D2CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5435D1D273940E70096D2CB /* EditMemo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EditMemo.storyboard; sourceTree = "<group>"; };
+		D5435D1F2739416C0096D2CB /* EditMemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMemoViewController.swift; sourceTree = "<group>"; };
+		D5435D21273943E90096D2CB /* Main2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main2.storyboard; sourceTree = "<group>"; };
+		D5435D23273944E70096D2CB /* MemoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MemoTableViewCell.swift; path = "Memo app/StoryBoard/MemoTableViewCell.swift"; sourceTree = SOURCE_ROOT; };
+		D5435D24273944E70096D2CB /* MemoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MemoTableViewCell.xib; path = "Memo app/StoryBoard/MemoTableViewCell.xib"; sourceTree = SOURCE_ROOT; };
+		D5435D28273948D30096D2CB /* RealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmModel.swift; sourceTree = "<group>"; };
+		D5435D2A273948DA0096D2CB /* RealmQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmQuery.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +47,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5435D1A27393CC50096D2CB /* RealmSwift in Frameworks */,
+				D5435D1827393CC50096D2CB /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +74,46 @@
 		D5435D0127393C7C0096D2CB /* Memo app */ = {
 			isa = PBXGroup;
 			children = (
+				D5435D27273948C60096D2CB /* Realm */,
+				D5435D1C27393CE10096D2CB /* ViewController */,
+				D5435D1B27393CD10096D2CB /* StoryBoard */,
 				D5435D0227393C7C0096D2CB /* AppDelegate.swift */,
 				D5435D0427393C7C0096D2CB /* SceneDelegate.swift */,
-				D5435D0627393C7C0096D2CB /* ViewController.swift */,
-				D5435D0827393C7C0096D2CB /* Main.storyboard */,
 				D5435D0B27393C7E0096D2CB /* Assets.xcassets */,
 				D5435D0D27393C7E0096D2CB /* LaunchScreen.storyboard */,
 				D5435D1027393C7E0096D2CB /* Info.plist */,
 			);
 			path = "Memo app";
+			sourceTree = "<group>";
+		};
+		D5435D1B27393CD10096D2CB /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				D5435D0827393C7C0096D2CB /* Main.storyboard */,
+				D5435D1D273940E70096D2CB /* EditMemo.storyboard */,
+				D5435D21273943E90096D2CB /* Main2.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		D5435D1C27393CE10096D2CB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D5435D23273944E70096D2CB /* MemoTableViewCell.swift */,
+				D5435D24273944E70096D2CB /* MemoTableViewCell.xib */,
+				D5435D1F2739416C0096D2CB /* EditMemoViewController.swift */,
+				D5435D0627393C7C0096D2CB /* HomeViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		D5435D27273948C60096D2CB /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				D5435D28273948D30096D2CB /* RealmModel.swift */,
+				D5435D2A273948DA0096D2CB /* RealmQuery.swift */,
+			);
+			path = Realm;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +132,10 @@
 			dependencies = (
 			);
 			name = "Memo app";
+			packageProductDependencies = (
+				D5435D1727393CC50096D2CB /* Realm */,
+				D5435D1927393CC50096D2CB /* RealmSwift */,
+			);
 			productName = "Memo app";
 			productReference = D5435CFF27393C7C0096D2CB /* Memo app.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +164,9 @@
 				Base,
 			);
 			mainGroup = D5435CF627393C7C0096D2CB;
+			packageReferences = (
+				D5435D1627393CC50096D2CB /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+			);
 			productRefGroup = D5435D0027393C7C0096D2CB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,7 +182,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5435D0F27393C7E0096D2CB /* LaunchScreen.storyboard in Resources */,
+				D5435D22273943E90096D2CB /* Main2.storyboard in Resources */,
 				D5435D0C27393C7E0096D2CB /* Assets.xcassets in Resources */,
+				D5435D26273944E70096D2CB /* MemoTableViewCell.xib in Resources */,
+				D5435D1E273940E70096D2CB /* EditMemo.storyboard in Resources */,
 				D5435D0A27393C7C0096D2CB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,8 +197,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5435D0727393C7C0096D2CB /* ViewController.swift in Sources */,
+				D5435D25273944E70096D2CB /* MemoTableViewCell.swift in Sources */,
+				D5435D29273948D30096D2CB /* RealmModel.swift in Sources */,
+				D5435D2B273948DA0096D2CB /* RealmQuery.swift in Sources */,
+				D5435D0727393C7C0096D2CB /* HomeViewController.swift in Sources */,
 				D5435D0327393C7C0096D2CB /* AppDelegate.swift in Sources */,
+				D5435D202739416C0096D2CB /* EditMemoViewController.swift in Sources */,
 				D5435D0527393C7C0096D2CB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,6 +358,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -306,7 +370,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -323,6 +387,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -334,7 +399,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -360,6 +425,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D5435D1627393CC50096D2CB /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D5435D1727393CC50096D2CB /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D5435D1627393CC50096D2CB /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		D5435D1927393CC50096D2CB /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D5435D1627393CC50096D2CB /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D5435CF727393C7C0096D2CB /* Project object */;
 }
