@@ -8,22 +8,40 @@
 import UIKit
 
 class EditMemoViewController: UIViewController {
-
+    
+    let backButtonTitle = "메모"
+    @IBOutlet weak var contentTextView: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "adf", style: .plain, target: self, action: nil)
+        
+        let share = UIBarButtonItem(image: UIImage(systemName: "square.and.arrow.up"), style: .plain, target: self, action: #selector(shareButtonClicked))
+        
+        let save = UIBarButtonItem(title: "완료", style: .plain, target: self, action: #selector(saveButtonClicked))
+        navigationItem.rightBarButtonItems = [save, share]
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @objc func shareButtonClicked(){
+        
     }
-    */
-
+    
+    @objc func saveButtonClicked(){
+        let content = contentTextView.text
+        guard let firstReturnIndex = contentTextView.text.firstIndex(of: "\n") else {
+            return }
+        
+        let title = content![content!.startIndex...firstReturnIndex]
+        print(title)
+    }
+    
 }
+
+extension UITextView : UITextViewDelegate {
+    
+}
+
+

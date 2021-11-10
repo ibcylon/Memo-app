@@ -13,7 +13,6 @@ extension UIViewController {
     func searchQueryFromMemo(text: String) -> Results<Memo> {
     
         let localRealm = try! Realm()
-        
         //검색어가 제목과 본문에 있는 것을 필터링하여 반환
         let search = localRealm.objects(Memo.self).filter("title CONTAINS[c] '\(text)' OR content CONTAINS[c] '\(text)'")
         print("search : \(search)")
@@ -22,8 +21,8 @@ extension UIViewController {
     }
     
     func getAllMemo() -> Results<Memo> {
-        let localRealm = try! Realm()
         
+        let localRealm = try! Realm()
         let memos = localRealm.objects(Memo.self).sorted(byKeyPath: "writeDate", ascending: true)
         
         return memos
@@ -36,4 +35,18 @@ extension UIViewController {
         
         return count
     }
+    
+    func insertQueryMemo(content: String){
+        let localRealm = try! Realm()
+        
+        
+    }
+    
+    func deleteQueryMemo(row : Int){
+        let localRealm = try! Realm()
+    }
+    
+//    func updateQueryMemo(content:String){
+//        let localRealm = try! Realm()
+//    }
 }

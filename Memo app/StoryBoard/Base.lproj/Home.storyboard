@@ -17,23 +17,39 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="dfy-sa-OFw">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="egH-r9-Pig">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="102"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
-                                        <searchBar contentMode="redraw" id="nXN-WV-jCk">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="KhD-64-I65">
+                                            <rect key="frame" x="20" y="51" width="374" height="51"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </searchBar>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0개의 메모" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ewR-G6-QdV">
+                                            <rect key="frame" x="20" y="1" width="374" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="oM1-cr-ATC"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="ewR-G6-QdV" secondAttribute="trailing" constant="20" id="1tH-t9-AaG"/>
+                                        <constraint firstItem="KhD-64-I65" firstAttribute="leading" secondItem="egH-r9-Pig" secondAttribute="leading" constant="20" id="9Wz-dU-QMy"/>
+                                        <constraint firstItem="ewR-G6-QdV" firstAttribute="leading" secondItem="egH-r9-Pig" secondAttribute="leading" constant="20" id="Jes-ct-MJF"/>
+                                        <constraint firstItem="KhD-64-I65" firstAttribute="top" secondItem="ewR-G6-QdV" secondAttribute="bottom" id="gvm-XU-8XT"/>
+                                        <constraint firstAttribute="trailing" secondItem="KhD-64-I65" secondAttribute="trailing" constant="20" id="hTe-hE-2h2"/>
+                                        <constraint firstAttribute="bottom" secondItem="KhD-64-I65" secondAttribute="bottom" id="mAm-XF-PHJ"/>
+                                    </constraints>
                                 </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MemoTableViewCell" id="d5a-Wg-07h" customClass="MemoTableViewCell" customModule="Memo_app" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="93.5" width="374" height="43.5"/>
+                                        <rect key="frame" x="20" y="151.5" width="374" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="d5a-Wg-07h" id="v3W-DK-wMI">
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>
@@ -52,19 +68,21 @@
                             <constraint firstItem="dfy-sa-OFw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="xa0-Rt-qde"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="W1a-b6-fGL"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="folder" catalog="system" id="cg2-g5-xAn"/>
                     <navigationItem key="navigationItem" id="KbY-he-ryn"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="searchBar" destination="nXN-WV-jCk" id="A98-gA-wjc"/>
+                        <outlet property="countLabel" destination="ewR-G6-QdV" id="h1k-eB-7bT"/>
                         <outlet property="tableView" destination="dfy-sa-OFw" id="sCy-Rf-IJY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1142" y="65"/>
+            <point key="canvasLocation" x="1140.5797101449277" y="64.955357142857139"/>
         </scene>
     </scenes>
     <resources>
+        <image name="folder" catalog="system" width="128" height="97"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

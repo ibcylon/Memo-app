@@ -12,7 +12,9 @@ class HomeViewController: UIViewController {
 
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var countLabel: UILabel!
     
+    let localRealm  = try! Realm()
     var tasks : Results<Memo>!
     
     override func viewDidLoad() {
@@ -29,26 +31,21 @@ class HomeViewController: UIViewController {
         
         
         if tasks.count == 0 {
-            //1. UIAlertController 생성: 밑바탕 + 타이틀 + 본문
-            let alert = UIAlertController(title: "ㅌ", message: "처음 오셧군요", preferredStyle: .actionSheet)
-            
-//            //2. UIalertAction 생성 : 버튼들..
-//            let ok = UIAlertAction(title: "iPhone Get!", style: .default)
-//            let ok2 = UIAlertAction(title: "iPhone Get2!", style: .default)
-//
-//            let ipad = UIAlertAction(title: "ipad", style: .destructive)
-//            let watch = UIAlertAction(title: "watch", style: .cancel)
-//
-//            //3. 1 + 2
-//            //.cancel is located bottom
-//            alert.addAction(ok)
-//            alert.addAction(ipad)
-//            alert.addAction(watch)
-//            alert.addAction(ok2)
-            
-            //4. Present Modal 형식
-            present(alert, animated: true, completion: nil)
+        //1. UIAlertController 생성: 밑바탕 + 타이틀 + 본문
+        let welcomeMessage = "처음 오셨군요! \n 환영합니다. \n 당신만의 메모를 작성학고\n 관리해보세요!"
+        let alert = UIAlertController(title: "ㅌ", message: welcomeMessage, preferredStyle: .alert)
+        
+        //2. UIalertAction 생성 : 버튼들..
+        let ok = UIAlertAction(title: "확인", style:  .default)
+        
+        alert.addAction(ok)
+        
+        //4. Present Modal 형식
+        present(alert, animated: true, completion: nil)
         }
+        
+        countLabel.text = "\(getAllCount())개의 메모"
+        countLabel.font = UIFont(name: "system", size: 40)
         
     }
 }
@@ -56,7 +53,17 @@ class HomeViewController: UIViewController {
 extension HomeViewController : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        //Fixed Memo와 일반 메모 구분하여 return
+//        //Fixed
+//        let fixedMemo = tasks.filter("fixed == true").sorted(byKeyPath: "writeDate", ascending: true)
+//
+//        //Non-Fixed
+//        let unfixedMemo = tasks.filter("fixed == false").sorted(byKeyPath: "writeDate", ascending: true)
+//
+//        if section == 0 {
+//            return fixedMemo.count
+//        } else {
+//            return unfixedMemo.count
+//        }
         
         return tasks.count
     }
@@ -76,7 +83,34 @@ extension HomeViewController : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 110
     }
+
     
+    func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        
+        var buttonImageName : String!
+        
+        if indexPath.section == 0 {
+            buttonImageName = "pin.fill"
+        } else {
+            buttonImageName = "pin.slash.fill"
+        }
+        
+        let fixed = UIContextualAction(style: .normal, title: "") { action, view, completeHandler in
+            completeHandler(true)
+        }
+        
+        fixed.image = UIImage(systemName: buttonImageName)
+        fixed.backgroundColor = .orange
+        
+        return UISwipeActionsConfiguration(actions: [fixed])
+        
+    }
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        
+    }
     
 }
 

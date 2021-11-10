@@ -10,14 +10,14 @@
 		D5435D0327393C7C0096D2CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5435D0227393C7C0096D2CB /* AppDelegate.swift */; };
 		D5435D0527393C7C0096D2CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5435D0427393C7C0096D2CB /* SceneDelegate.swift */; };
 		D5435D0727393C7C0096D2CB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5435D0627393C7C0096D2CB /* HomeViewController.swift */; };
-		D5435D0A27393C7C0096D2CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5435D0827393C7C0096D2CB /* Main.storyboard */; };
+		D5435D0A27393C7C0096D2CB /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5435D0827393C7C0096D2CB /* Home.storyboard */; };
 		D5435D0C27393C7E0096D2CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5435D0B27393C7E0096D2CB /* Assets.xcassets */; };
 		D5435D0F27393C7E0096D2CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5435D0D27393C7E0096D2CB /* LaunchScreen.storyboard */; };
 		D5435D1827393CC50096D2CB /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = D5435D1727393CC50096D2CB /* Realm */; };
 		D5435D1A27393CC50096D2CB /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D5435D1927393CC50096D2CB /* RealmSwift */; };
 		D5435D1E273940E70096D2CB /* EditMemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5435D1D273940E70096D2CB /* EditMemo.storyboard */; };
 		D5435D202739416C0096D2CB /* EditMemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5435D1F2739416C0096D2CB /* EditMemoViewController.swift */; };
-		D5435D22273943E90096D2CB /* Main2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5435D21273943E90096D2CB /* Main2.storyboard */; };
+		D5435D22273943E90096D2CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5435D21273943E90096D2CB /* Main.storyboard */; };
 		D5435D25273944E70096D2CB /* MemoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5435D23273944E70096D2CB /* MemoTableViewCell.swift */; };
 		D5435D26273944E70096D2CB /* MemoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5435D24273944E70096D2CB /* MemoTableViewCell.xib */; };
 		D5435D29273948D30096D2CB /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5435D28273948D30096D2CB /* RealmModel.swift */; };
@@ -29,13 +29,13 @@
 		D5435D0227393C7C0096D2CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5435D0427393C7C0096D2CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D5435D0627393C7C0096D2CB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		D5435D0927393C7C0096D2CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D5435D0927393C7C0096D2CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
 		D5435D0B27393C7E0096D2CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5435D0E27393C7E0096D2CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D5435D1027393C7E0096D2CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5435D1D273940E70096D2CB /* EditMemo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EditMemo.storyboard; sourceTree = "<group>"; };
 		D5435D1F2739416C0096D2CB /* EditMemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMemoViewController.swift; sourceTree = "<group>"; };
-		D5435D21273943E90096D2CB /* Main2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main2.storyboard; sourceTree = "<group>"; };
+		D5435D21273943E90096D2CB /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		D5435D23273944E70096D2CB /* MemoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MemoTableViewCell.swift; path = "Memo app/StoryBoard/MemoTableViewCell.swift"; sourceTree = SOURCE_ROOT; };
 		D5435D24273944E70096D2CB /* MemoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MemoTableViewCell.xib; path = "Memo app/StoryBoard/MemoTableViewCell.xib"; sourceTree = SOURCE_ROOT; };
 		D5435D28273948D30096D2CB /* RealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmModel.swift; sourceTree = "<group>"; };
@@ -89,9 +89,9 @@
 		D5435D1B27393CD10096D2CB /* StoryBoard */ = {
 			isa = PBXGroup;
 			children = (
-				D5435D0827393C7C0096D2CB /* Main.storyboard */,
+				D5435D0827393C7C0096D2CB /* Home.storyboard */,
 				D5435D1D273940E70096D2CB /* EditMemo.storyboard */,
-				D5435D21273943E90096D2CB /* Main2.storyboard */,
+				D5435D21273943E90096D2CB /* Main.storyboard */,
 			);
 			path = StoryBoard;
 			sourceTree = "<group>";
@@ -182,11 +182,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5435D0F27393C7E0096D2CB /* LaunchScreen.storyboard in Resources */,
-				D5435D22273943E90096D2CB /* Main2.storyboard in Resources */,
+				D5435D22273943E90096D2CB /* Main.storyboard in Resources */,
 				D5435D0C27393C7E0096D2CB /* Assets.xcassets in Resources */,
 				D5435D26273944E70096D2CB /* MemoTableViewCell.xib in Resources */,
 				D5435D1E273940E70096D2CB /* EditMemo.storyboard in Resources */,
-				D5435D0A27393C7C0096D2CB /* Main.storyboard in Resources */,
+				D5435D0A27393C7C0096D2CB /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,12 +210,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D5435D0827393C7C0096D2CB /* Main.storyboard */ = {
+		D5435D0827393C7C0096D2CB /* Home.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				D5435D0927393C7C0096D2CB /* Base */,
 			);
-			name = Main.storyboard;
+			name = Home.storyboard;
 			sourceTree = "<group>";
 		};
 		D5435D0D27393C7E0096D2CB /* LaunchScreen.storyboard */ = {

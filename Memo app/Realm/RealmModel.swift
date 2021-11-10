@@ -14,6 +14,7 @@ class Memo: Object {
     @Persisted var title: String //제목(필수)
     @Persisted var content: String? //본문(옵션)
     @Persisted var writeDate = Date() //작성 날짜
+    @Persisted var fixed:Bool // 고정 메모
     
     //: Int, String UUID, ObjectID -> AutoIncrement
     @Persisted(primaryKey: true) var _id:ObjectId
@@ -23,5 +24,6 @@ class Memo: Object {
         self.title = title
         self.content = content
         self.writeDate = writeDate
+        self.fixed = false
     }
 }
