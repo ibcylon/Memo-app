@@ -26,4 +26,6 @@ class Memo: Object {
         self.writeDate = writeDate
         self.fixed = false
     }
+    
+    static var sections = ["고정된 메모", "메모", "개 검색"]
 }

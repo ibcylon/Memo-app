@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Welcome Pop Up View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="WelcomePopUpViewController" id="Y6W-OH-hqX" customClass="WelcomePopUpViewController" customModule="Memo_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JSO-IE-c28">
+                                <rect key="frame" x="82" y="323" width="250" height="250"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EDQ-ef-uvc">
+                                        <rect key="frame" x="25" y="185" width="200" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="n3g-EL-6mf"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="확인"/>
+                                        <connections>
+                                            <action selector="okButtonClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="RWg-Bp-EzC"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gXP-i6-Au9">
+                                        <rect key="frame" x="25" y="25" width="200" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="150" id="HNz-Yp-I0r"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="EDQ-ef-uvc" secondAttribute="bottom" constant="20" id="EqD-Rg-Jd5"/>
+                                    <constraint firstItem="gXP-i6-Au9" firstAttribute="leading" secondItem="JSO-IE-c28" secondAttribute="leading" constant="25" id="H8I-7n-Kz6"/>
+                                    <constraint firstItem="EDQ-ef-uvc" firstAttribute="centerX" secondItem="JSO-IE-c28" secondAttribute="centerX" id="ODh-Er-TZ8"/>
+                                    <constraint firstItem="gXP-i6-Au9" firstAttribute="centerX" secondItem="JSO-IE-c28" secondAttribute="centerX" id="TAy-Ir-aXV"/>
+                                    <constraint firstItem="gXP-i6-Au9" firstAttribute="top" secondItem="JSO-IE-c28" secondAttribute="top" constant="25" id="YdQ-7g-iEn"/>
+                                    <constraint firstAttribute="width" constant="250" id="eB8-Md-DOo"/>
+                                    <constraint firstAttribute="trailing" secondItem="gXP-i6-Au9" secondAttribute="trailing" constant="25" id="pHe-MG-CcR"/>
+                                    <constraint firstAttribute="height" constant="250" id="qHR-Ob-D0G"/>
+                                    <constraint firstItem="EDQ-ef-uvc" firstAttribute="top" secondItem="gXP-i6-Au9" secondAttribute="bottom" constant="10" id="x6g-oN-YYP"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="JSO-IE-c28" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="89w-gg-mSG"/>
+                            <constraint firstItem="JSO-IE-c28" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="MNb-1I-mTP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="messageLabel" destination="gXP-i6-Au9" id="nn9-wq-6yT"/>
+                        <outlet property="messageView" destination="JSO-IE-c28" id="x7C-b6-Ysc"/>
+                        <outlet property="okButton" destination="EDQ-ef-uvc" id="o57-KU-Btt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="35" y="56"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

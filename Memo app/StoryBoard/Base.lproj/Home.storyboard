@@ -16,19 +16,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="dfy-sa-OFw">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="dfy-sa-OFw">
                                 <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="egH-r9-Pig">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="102"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="123"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="KhD-64-I65">
-                                            <rect key="frame" x="20" y="51" width="374" height="51"/>
+                                            <rect key="frame" x="20" y="62" width="374" height="51"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </searchBar>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0개의 메모" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ewR-G6-QdV">
-                                            <rect key="frame" x="20" y="1" width="374" height="50"/>
+                                            <rect key="frame" x="20" y="12" width="374" height="50"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="50" id="oM1-cr-ATC"/>
                                             </constraints>
@@ -44,12 +44,12 @@
                                         <constraint firstItem="ewR-G6-QdV" firstAttribute="leading" secondItem="egH-r9-Pig" secondAttribute="leading" constant="20" id="Jes-ct-MJF"/>
                                         <constraint firstItem="KhD-64-I65" firstAttribute="top" secondItem="ewR-G6-QdV" secondAttribute="bottom" id="gvm-XU-8XT"/>
                                         <constraint firstAttribute="trailing" secondItem="KhD-64-I65" secondAttribute="trailing" constant="20" id="hTe-hE-2h2"/>
-                                        <constraint firstAttribute="bottom" secondItem="KhD-64-I65" secondAttribute="bottom" id="mAm-XF-PHJ"/>
+                                        <constraint firstAttribute="bottom" secondItem="KhD-64-I65" secondAttribute="bottom" constant="10" id="mAm-XF-PHJ"/>
                                     </constraints>
                                 </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MemoTableViewCell" id="d5a-Wg-07h" customClass="MemoTableViewCell" customModule="Memo_app" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="151.5" width="374" height="43.5"/>
+                                        <rect key="frame" x="20" y="172.5" width="374" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="d5a-Wg-07h" id="v3W-DK-wMI">
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="43.5"/>

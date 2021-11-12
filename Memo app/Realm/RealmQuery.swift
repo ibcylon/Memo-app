@@ -36,14 +36,29 @@ extension UIViewController {
         return count
     }
     
-    func insertQueryMemo(content: String){
+    func insertQueryMemo(title: String,content:String ){
         let localRealm = try! Realm()
+        let task = Memo(title: title, content: content, writeDate: Date())
         
-        
+        try! localRealm.write {
+            localRealm.add(task)
+        }
     }
     
-    func deleteQueryMemo(row : Int){
+    func deleteQueryMemo(task:Memo){
         let localRealm = try! Realm()
+        
+        try! localRealm.write {
+            localRealm.delete(task)
+        }
+    }
+    
+    func updateQueryFixedState(task:Memo){
+        let localRealm = try! Realm()
+        
+        try! localRealm.write {
+            task.fixed = !task.fixed
+        }
     }
     
 //    func updateQueryMemo(content:String){
